@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LetsGo App</title>
+    <link rel='stylesheet' href="assets/flat-ui.css" type="text/css">
+    <style>
+        body{
+            margin: 0px;
+            background-color: #ECF0F1;
+            line-height: 1.5 !important;
+            height: 100vh !important;
+        }
+        label{
+            line-height:1.5 !important;
+        }
+        .title {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-size: 45px !important;
+            font-weight: 700;
+            color: #ecf0f1;
+            text-align: center;
+            align-content: center;
+            background: #8e44ad;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .subheading {
+            font-size: 18px;
+            margin-top: 0px;
+            padding-top:0px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .questions {
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+        .column {
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 25px
+            padding-right: 10px;
+            padding-left: 50px;
+        }
+        .btn-hg {
+            width: 150px !important;
+            margin-bottom: 20px !important;
+            margin-left: 50px !important;
+
+        }
+        .input {
+            margin-top: 10px;
+        }
+        h5 {
+            margin-left: 50px;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class ="title">
+    <h1 style="font-size:60px">LetsGo</h1>
+    <div class="subheading", style="margin-bottom: 10px">What do you want to do today?
+    </div>
+</div>
+
+<br>
+<div>
+    <h5>No more wasting time wondering how you can spend your day.
+        Enter the neighborhood you want to explore, the food you want to eat, and the places you want to visit.
+        We'll create an itinerary for you!
+    </h5>
+
+</div>
+<form action="gresponse" method="post">
+
+<div>
+    <div class="column">
+        <label for="location" class="questions">Which neighborhood do you want to explore?</label>
+        <br>
+	    <input type="text" id="location" name="location" class="form-control input" />
+    </div>
+    <div>
+        <div class="column">
+            <label for="food"
+                   class="questions"
+                   >What do you want to eat?</label>
+            <br>
+            <input type="text"
+                   id="food"
+                   name="food"
+                   class="form-control input"
+                   placeholder="tacos, sushi, pizza...the choice is yours"/>
+        </div>
+        <div class="column">
+            <label for="food_price_tier"
+                   class="questions"
+                   >Desired price range</label>
+            <br>
+            <input type="text"
+                   id="food_price_tier"
+                   name="food_price_tier"
+                   class="form-control input"
+                   placeholder="choose betweeen 1 (cheapest) to 5 (most expensive)"/>
+        </div>
+        <div class="column">
+            <label for="entertainment"
+                   class="questions"
+                   >Which place do you want to visit?</label>
+            <br>
+            <input type="text"
+                   id="entertainment"
+                   name="entertainment"
+                   class="form-control input"
+                   placeholder="museums, coffee shops, parks...oh the places you can go"/>
+        </div>
+    </div>
+
+    <br>
+        <input type="submit"
+               value="Go"
+               class="btn btn-hg btn-info"
+               style="margin-left:25px"
+               name"gobtn"/></form>
+</div>
+</body>
+</html>

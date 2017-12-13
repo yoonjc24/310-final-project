@@ -1,0 +1,10 @@
+.title {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    font-style: bold;
+    color: #34495e;
+    text-align: center;
+    background: dodgerblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
